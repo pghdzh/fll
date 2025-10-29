@@ -1,0 +1,32 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景圆 -->
+  <circle cx="24" cy="24" r="24" fill="url(#bgGrad)" />
+
+  <!-- 彼岸花花瓣 -->
+  <g transform="translate(24,24)">
+    <path d="M0,-12 C2,-6 6,-4 0,0 C-6,-4 -2,-6 0,-12 Z" fill="url(#petal1)" />
+    <path d="M0,-12 C4,-4 6,0 0,6 C-6,0 -4,-4 0,-12 Z" fill="url(#petal2)" transform="rotate(72)" />
+    <path d="M0,-12 C2,-6 6,-4 0,0 C-6,-4 -2,-6 0,-12 Z" fill="url(#petal1)" transform="rotate(144)" />
+    <path d="M0,-12 C4,-4 6,0 0,6 C-6,0 -4,-4 0,-12 Z" fill="url(#petal2)" transform="rotate(216)" />
+    <path d="M0,-12 C2,-6 6,-4 0,0 C-6,-4 -2,-6 0,-12 Z" fill="url(#petal1)" transform="rotate(288)" />
+  </g>
+
+  <!-- 花蕊 -->
+  <circle cx="24" cy="24" r="3" fill="#FFD6E8" opacity="0.8" />
+
+  <!-- 渐变定义 -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2C001E" />
+      <stop offset="1" stop-color="#5C0038" />
+    </linearGradient>
+    <linearGradient id="petal1" x1="-12" y1="-12" x2="12" y2="12" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E31C3D" />
+      <stop offset="1" stop-color="#A10A2B" />
+    </linearGradient>
+    <linearGradient id="petal2" x1="-12" y1="-12" x2="12" y2="12" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F08FCF" />
+      <stop offset="1" stop-color="#8C2C6A" />
+    </linearGradient>
+  </defs>
+</svg>
