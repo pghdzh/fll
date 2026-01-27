@@ -30,7 +30,22 @@ const router = createRouter({
       path: "/voice",
       component: () => import("@/views/voiceView/index.vue"),
     },
-
+    {
+      path: "/music",
+      component: () => import("@/views/musicView/index.vue"),
+    },
+    {
+      path: "/talk",
+      component: () => import("@/views/talkView/index.vue"),
+    },
+    {
+      path: "/wiki",
+      component: () => import("@/views/wikiView/index.vue"),
+    },
+    // {
+    //   path: "/thanks",
+    //   component: () => import("@/views/thanksView/index.vue"),
+    // },
   ],
   scrollBehavior() {
     return { top: 0 };
