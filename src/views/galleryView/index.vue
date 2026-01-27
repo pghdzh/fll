@@ -117,7 +117,7 @@
           class="florlo-card"
           @click="openLightbox(getDisplayedIndex(img.id, index))"
           ref="cards"
-          :class="{ 'liked-card': img.liked }"
+          :class="{ 'liked-card': img.liked, loaded: img.liked }"
         >
           <div class="card-inner">
             <div class="card-frame">
@@ -703,11 +703,13 @@ const handleLike = async (img: ImageItem) => {
       const card = Array.from(document.querySelectorAll(".florlo-card")).find(
         (card) => {
           const cardImg = card.querySelector("img");
+
           return cardImg?.getAttribute("src") === img.src;
         }
       );
       if (card) {
         card.classList.add("new-liked");
+
         setTimeout(() => {
           card.classList.remove("new-liked");
         }, 1500);
