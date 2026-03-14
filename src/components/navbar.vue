@@ -175,7 +175,7 @@
                         <span class="item-wave"></span>
                       </RouterLink>
                       <a
-                        href="http://slty.site/#/redirector"
+                        href="https://slty.site/#/redirector"
                         target="_blank"
                         rel="noopener"
                         class="dropdown-item external"
@@ -273,7 +273,7 @@
               </RouterLink>
 
               <a
-                href="http://slty.site/#/redirector"
+                href="https://slty.site/#/redirector"
                 target="_blank"
                 rel="noopener"
                 class="mobile-nav-item external"
@@ -376,7 +376,7 @@ const isPlaying = ref(false);
 const audioPlayer = ref<HTMLAudioElement | null>(null);
 
 // BGM URL
-const bgmUrl = "http://36.150.237.25:3000/music/酣梦于彼岸深红.mp3";
+const bgmUrl = import.meta.env.VITE_API_BASE_URL+"/music/酣梦于彼岸深红.mp3";
 
 // 在线人数
 const siteId = "fll";
@@ -435,7 +435,7 @@ onMounted(() => {
   }
 
   // 连接在线人数socket
-  const socket: any = io("http://36.150.237.25:3000", {
+  const socket: any = io(import.meta.env.VITE_API_BASE_URL, {
     query: { siteId },
   });
 
